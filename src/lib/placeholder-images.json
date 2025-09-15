@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "logo-quantum",
+      "description": "Logo for Quantum Inc",
+      "imageUrl": "https://picsum.photos/seed/quantum/150/50",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "logo-stellar",
+      "description": "Logo for Stellar Solutions",
+      "imageUrl": "https://picsum.photos/seed/stellar/150/50",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "logo-apex",
+      "description": "Logo for Apex Dynamics",
+      "imageUrl": "https://picsum.photos/seed/apex/150/50",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "logo-fusion",
+      "description": "Logo for Fusion Enterprises",
+      "imageUrl": "https://picsum.photos/seed/fusion/150/50",
+      "imageHint": "company logo"
+    }
+  ]
 }

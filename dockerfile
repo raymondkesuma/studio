@@ -1,5 +1,5 @@
 # ---- Stage 1: Build ----
-FROM node:18-alpine AS builder
+FROM node:18-slim AS builder
 
 # Set working directory
 WORKDIR /app
@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm ci --legacy-peer-deps
+RUN npm install -g npm@latest
 
 # Copy all source code
 COPY . .
@@ -17,7 +17,7 @@ COPY . .
 RUN npm run build
 
 # ---- Stage 2: Run ----
-FROM node:18-alpine AS runner
+FROM node:18-slim AS builder
 
 WORKDIR /app
 

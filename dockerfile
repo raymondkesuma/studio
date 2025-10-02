@@ -17,7 +17,7 @@ COPY . .
 RUN npm run build
 
 # ---- Stage 2: Run ----
-FROM node:18-slim AS builder
+FROM node:18-slim AS runner
 
 WORKDIR /app
 
